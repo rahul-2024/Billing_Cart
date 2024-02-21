@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Billing</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <div class="table1">
+                <div class="innerclass">
+                        <form>
+                                <div>
+                                        <label for="ProductCode">Product Code</label>
+                                        <input type="text" name="ProductCode" id="ProductCode">
+                                </div>
+                                <div>
+                                        <label for="ProductName">Product Name</label>
+                                        <input type="text" name="ProductName" id="ProductName">
+                                </div>
+                                <div>
+                                        <label for="Qty">Quantity</label>
+                                        <input type="number" name="Qty" id="Qty">
+                                </div>
+                                <div>
+                                        <label for="price">Price</label>
+                                        <input type="number" name="price" id="price">
+                                </div>
+                                <div class="form_action--button">
+                                        <input type="button" value="submit" onclick="onFormSubmit()">
+                                        
+                                </div>
+                        </form>
+                </div>
+                <div class="innerclass">
+                        <td id="td1">
+                                <table class="list" id="storelist">
+                                        <thead class="product-list">
+                                                <tr>
+                                                        <th>Product Code</th>
+                                                        <th>Product Name</th>
+                                                        <th>Quantity</th>
+                                                        <th>Price</th>
+                                                </tr>
+
+                                        </thead>
+                                </table>
+                                <div class="total">
+                                        <h3>TOTAL</h3>
+                                        <h3 id="sum">&#8377; 000</h3>
+                                </div>
+                                <div><input type="button" value="print" onclick="window.print()"></div>
+                        </td>
+                </div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>

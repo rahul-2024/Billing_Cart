@@ -1,0 +1,116 @@
+body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/BUTNE36MCQYVDECE6DOMI2OIBQ.jpg&w=1440&impolicy=high_res');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100vh;
+        filter: brightness(80%);
+}
+table{
+        width:80%;
+        margin: 40px auto;
+        background: rgba(93, 119, 143, 0.4);
+
+}
+table.list{
+        text-align: center;
+        width: 100%;
+    
+}
+td{
+        border: 1px solid rgb(204, 200, 200);
+        text-align: left;
+        padding: 8px 15px;
+}
+tr:nth-child(even), table.list thread> tr{
+        background-color: rgb(204, 200, 200);
+}
+input[type="text"],input[type="number"]{
+        width: 91%;
+        padding-left: 10px;
+        margin: 20px 0;
+        border: none;
+        outline: none;
+        height: 40px;
+        background: transparent;
+        display: inline-block;
+        border-bottom: 2px solid rgb(49, 48, 48);
+        border-radius: 2px;
+}
+input[type="button"]{
+        background: #eee;
+        padding:6px 12px;
+        margin: 15px 0 10px;
+        display: inline-block;
+        border: none;
+        border-radius: 30px;
+        font-size: 1rem;
+        cursor: pointer;
+        outline: none;
+}
+input[type="button"]:hover{
+        background: rgb(122, 178, 180);
+}
+/* button{
+        background: #eee;
+        padding:6px 12px;
+        margin: 15px 0 10px;
+        display: inline-block;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        outline: none;
+}
+button:hover{
+        background: #4b99d8;
+} */
+.product-list tr td{
+        background: rgb(245, 245, 245,.6);
+        user-select: none;
+}
+
+.total{
+        background-color: rgba(182, 176, 176, 0.979);
+        width: 96%;
+        height: 30px;
+        margin-top: 10px;
+        display: flex;
+        color: rgb(54, 50, 50);
+        padding: 0 10px;
+        justify-content: space-between;
+        align-items: center;
+}
+#storelist{
+        /* background-color: blue; */
+       margin-bottom: 0px;
+}
+#sum{
+        margin-right: 35px;
+}
+.innerclass{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        /* background-color: brown; */
+}
+.table1{
+        display: flex;
+        padding-top: 10px;
+        width: 90vw;
+        justify-content: space-around;
+        /* background-color: rgba(122, 127, 153, 0.781); */
+        /* border: solid rgb(97, 94, 94); */
+}
+form div{
+        display: flex;   
+        position: relative;  
+        align-items: center;
+}
+form label{
+        position: absolute;
+        bottom: 55px;
+        transition: cubic-bezier(0.39, 0.575, 0.565, 1) .5s;
+}
